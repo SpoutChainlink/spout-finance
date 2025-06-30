@@ -17,13 +17,12 @@ Spout Finance revolutionizes DeFi by introducing secure, yield-bearing collatera
 2. [How It Works](#howitworks)
 3. [Monorepo Layout](#monorepolayout)
 4. [Quick Start](#quickstart)
-5. [Package Guides](#packageguides)
-6. [Architecture](#architecture)
-7. [Tech Stack](#techstack)
-8. [Security & Compliance](#security--compliance)
-9. [Testing](#testing)
-10. [Contributing](#contributing)
-11. [License](#license)
+5. [Tech Stack](#-tech-stack)
+6. [Package Guides](#-package-guides)
+7. [Architecture](#-architecture)
+8. [Security & Compliance](#%EF%B8%8F-security--compliance)
+9. [Testing](#-testing)
+10. [License](#-license)
 
 ## Why Spout?
 ### ❌ Capital Inefficiency Today
