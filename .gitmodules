@@ -1,0 +1,9 @@
+[submodule "Contracts"]
+	path = Contracts
+	url = git@github.com:SpoutChainlink/Contracts.git
+[submodule "frontend"]
+	path = frontend
+	url = git@github.com:SpoutChainlink/frontend.git
+[submodule "rwa-backend"]
+	path = rwa-backend
+	url = git@github.com:SpoutChainlink/rwa-backend.git
