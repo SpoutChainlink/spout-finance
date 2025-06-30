@@ -1,4 +1,4 @@
-# Spout Finance ⚡️ — Confidential RWA Collateral Protocol
+# Spout Finance ![Whale](./assets/Whale.png) — Confidential RWA Collateral Protocol
 Spout Finance revolutionizes DeFi by introducing secure, yield-bearing collateral options backed by real-world assets. It enables institutions to transact and earn yield while maintaining full confidentiality through encrypted balances and private transfers.
  
 **Live Demo:** [Spout Finance App](https://spoutfinance-app.vercel.app/)  
