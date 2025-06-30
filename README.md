@@ -17,11 +17,11 @@ Spout Finance revolutionizes DeFi by introducing secure, yield-bearing collatera
 ## 📚 Table of Contents
 1. [Why Spout?](#whyspout)
 2. [How It Works](#howitworks)
-3. [Monorepo Layout](#monorepolayout)
-4. [Quick Start](#quickstart)
-5. [Tech Stack](#-tech-stack)
-6. [Package Guides](#-package-guides)
-7. [Architecture](#-architecture)
+3. [Architecture](#-architecture)
+4. [Monorepo Layout](#monorepolayout)
+5. [Quick Start](#quickstart)
+6. [Tech Stack](#-tech-stack)
+7. [Package Guides](#-package-guides)
 8. [Security & Compliance](#%EF%B8%8F-security--compliance)
 9. [Testing](#-testing)
 10. [License](#-license)
@@ -56,6 +56,9 @@ Spout Finance revolutionizes DeFi by introducing secure, yield-bearing collatera
    *Order maths run inside Inco Lightning; events are emitted encrypted. Only the counter‑party and authorised auditors can decrypt.*
 
 ---
+
+## 🧠 Architecture
+![Spout Finance Architecture](./assets/architecture.jpeg)
 
 ## Monorepo Layout
 
@@ -150,12 +153,6 @@ pnpm --filter backend run dev
 ```bash
 pnpm --filter frontend run dev
 ```
-
-
-## 🧠 Architecture
-![Spout Finance Architecture](./assets/architecture.jpeg)
-
-
 
 ## 🛡️ Security & Compliance
 ✅ ERC‑3643 Transfer Hooks: Enforce KYC, jurisdiction, accreditation
