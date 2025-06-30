@@ -1,14 +1,16 @@
 # Spout Finance ⚡️ — Confidential RWA Collateral Protocol
 Spout Finance revolutionizes DeFi by introducing secure, yield-bearing collateral options backed by real-world assets. It enables institutions to transact and earn yield while maintaining full confidentiality through encrypted balances and private transfers.
-[Chainlink Hackathon 2025 Submission]
+ 
+**Live Demo:** [Spout Finance App](https://spoutfinance-app.vercel.app/)  
+**API Documentation:** [Backend APIs](https://rwa-deploy-backend.onrender.com/api)
 
 ## ✨ At a Glance
 |                         |                                    |
 |-------------------------|------------------------------------|
 | **Core Problem**        | Crypto‑native collateral is volatile and forces 150 %+ over‑collateralisation → idle capital. |
 | **Spout’s Answer**      | Tokenised **real‑world assets (RWA)** that stay **1 : 1** with their cash value *while* yielding AAA‑bond–like returns. |
-| **Privacy Breakthrough**| Trades and balances stay **encrypted** (FHE) yet settle trustlessly on Ethereum. |
-| **Compliance**          | Built on **ERC‑3643 (T‑REX)** and **ERC‑725/735** identity; on‑chain KYC, AML & transfer rules. |
+| **Privacy Breakthrough**| Trades and balances stay **encrypted** (FHE) yet settle trustlessly on Base. |
+| **Compliance**          | Built on **ERC‑3643 (T‑REX)** and **ERC‑725** identity; on‑chain KYC, AML & transfer rules. |
 | **Oracle Backbone**     | **Chainlink Functions, Automation & DON** for price, proof‑of‑reserve (PoR) and settlement triggers. |
 
 
@@ -51,7 +53,7 @@ Spout Finance revolutionizes DeFi by introducing secure, yield-bearing collatera
    *Chainlink Functions pulls daily balances directly from the custodian’s API → `ProofOfReserve.sol` → anyone can compare PoR vs. token supply.*
 
 5. **Privacy Enforcement**  
-   *Order maths run inside Inco Lightning TEEs; events are emitted encrypted. Only the counter‑party and authorised auditors can decrypt.*
+   *Order maths run inside Inco Lightning; events are emitted encrypted. Only the counter‑party and authorised auditors can decrypt.*
 
 ---
 
@@ -80,9 +82,6 @@ pnpm install          # or yarn workspaces / npm workspaces
 # 3. Spin up everything (contracts ▸ backend ▸ frontend)
 pnpm run dev          # ≡ `hardhat node & nest start:dev & next dev`
 
-# Frontend: http://localhost:3000
-# Backend  APIs: https://rwa-deploy-backend.onrender.com/api
-
 ```
 
 
@@ -90,9 +89,9 @@ pnpm run dev          # ≡ `hardhat node & nest start:dev & next dev`
 
 | Layer | Tech |
 |-------|------|
-| Chain | Ethereum (Base Sepolia), Solidity 0.8.x |
-| Identity & Tokens | ERC‑3643, ERC‑725/734/735, OnChainID |
-| Privacy | Inco Lightning TEEs, FHE encrypted calldata & events |
+| Chain | Base Sepolia |
+| Identity & Tokens | ERC‑3643, ERC‑725, OnChainID |
+| Privacy | Inco Lightning FHE encrypted calldata & events |
 | Oracle / Automation | Chainlink Functions, Automation, DON |
 | Backend | NestJS + TypeScript, Supabase, Ethers.js |
 | Frontend | Next.js 14, Wagmi v1, Viem, Tailwind, shadcn/ui, Recharts |
@@ -169,7 +168,7 @@ pnpm --filter frontend run dev
 
 🧾 Proof of Reserve: Continuous 24h updates via Chainlink Automation
 
-🧪 **Planned Audit Scope:** Contracts, TEE enclave code, backend privileges
+🧪 **Planned Audit Scope:** Contracts, backend privileges
 
 ---
 
