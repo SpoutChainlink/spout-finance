@@ -154,7 +154,7 @@ pnpm --filter frontend run dev
 
 
 ## 🧠 Architecture
-![Spout Finance Architecture](./docs/architecture-diagram.png)
+![Spout Finance Architecture](./docs/architecture.jpeg)
 
 
 
